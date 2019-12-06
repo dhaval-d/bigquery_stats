@@ -78,14 +78,14 @@ def create_util_dataset_and_table(client):
     return table
 
 
-def main(project_id):
+def main(project_id,service_account_file):
     """
     1. authenticate with BigQuery client
     2. Create dataset and table in BigQuery project if they don't exist
     3. Scan through all datasets in a project and store stats in a destination table
     """
     # 1. authenticate with BigQuery client
-    client = authenticate_with_bigquery(project_id)
+    client = authenticate_with_bigquery(project_id,service_account_file)
 
     # 2. Create dataset and table in BigQuery project if they don't exist
     destination_table = create_util_dataset_and_table(client)
@@ -140,6 +140,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.project_id is None or args.service_account_file is None:
-        print 'Please provide project_id and service account key file'
+        print 'Please provide project_id and service_account_file'
         exit(1)
-    main(args.project_id)
+    main(args.project_id,args.service_account_file)
