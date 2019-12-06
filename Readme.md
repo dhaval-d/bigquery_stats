@@ -46,3 +46,6 @@ select * from `{PROJECT_ID}.utils.daily_storage_stats`
 {PROJECT_ID} - project_id you provided as an argument when you executed your application.
 </li>
 </ol>
+
+
+<b>****Please note:*****</b> You can schedule this application to run on a nightly basis in a cron job to get a daily snapshot of your storage usage for every table and build dashboard to analyze this information.
