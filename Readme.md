@@ -2,7 +2,7 @@
 This application is a small tool to gather storage statistics about tables and datasets
 for your BigQuery GCP project.
 
-The application uses __TABLES__ table to gather storage statistics about
+The application uses \_\_TABLES\_\_ table to gather storage statistics about
 each table in a dataset. Application loops through all datasets one by one.
 
 PLEASE NOTE: This application stores all of these stats in a dataset named utils and
