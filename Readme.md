@@ -22,8 +22,8 @@ creates them for you.
 <li>Create and download a service account key file in a JSON format</li>
 <li>Download a source code to your GCE instance or a local machine and go to root of the directory.</li>
 <li>Run following steps to create and activate a virtual environment<br>
-<code>virtualenv venv <br>
-source venv/bin/activate</code>
+<code>virtualenv venv</code> <br>
+<code>source venv/bin/activate</code>
 </li>
 <li>Now install dependencies<br>
 <code>
