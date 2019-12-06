@@ -106,7 +106,7 @@ def main(project_id,service_account_file):
                            , processing_timestamp,dataset_id)
         query_job = client.query(query)
 
-        # shouldn't return rows because
+        # shouldn't return rows because all rows are getting inserted in a table but this can be used for debugging
         for row in query_job:
             logging.info("{} | {} | {} | {} | {} | {} | {} | {} | {}".format(row.processing_time
                                                                               , row.project_id
